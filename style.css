@@ -1,0 +1,95 @@
+body {
+  background-color: #ffeef2;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#gif-header, .gift-header-img {
+  width: 150px;
+  height: 150px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+#yes-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#no-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gifts-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.gift-card {
+  background: #fff0f3;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px dashed #ff4d6d;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.letter-card {
+  background: #fff;
+  color: #333;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 350px;
+  text-align: left;
+}
