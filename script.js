@@ -36,9 +36,17 @@ function acceptProposal() {
 }
 
 function showSection(id) {
-  document.getElementById(id).classList.remove("hidden");
+    // Sembunyikan skrin gift apabila mana-mana cadangan gift ditekan
+    document.getElementById("gift-screen").classList.add("hidden");
+    
+    // Tunjukkan modal/section yang ditekan
+    document.getElementById(id).classList.remove("hidden");
 }
 
 function closeModal(id) {
-  document.getElementById(id).classList.add("hidden");
+    // Sembunyikan modal semasa
+    document.getElementById(id).classList.add("hidden");
+    
+    // Tunjukkan semula skrin gift
+    document.getElementById("gift-screen").classList.remove("hidden");
 }
