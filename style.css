@@ -111,3 +111,10 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Kesan bayang comel */
   margin: 0 auto;         /* Ratakan gambar ke tengah */
 }
+/* Saiz ikon GIF pada kad hadiah */
+.gift-card img.gift-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
