@@ -93,3 +93,21 @@ body {
   max-width: 350px;
   text-align: left;
 }
+/* Gaya untuk galeri gambar dalam Gift 1 */
+.photo-gallery {
+  display: flex;
+  flex-direction: column; /* Gambar disusun dari atas ke bawah */
+  gap: 15px;              /* Jarak antara gambar */
+  max-height: 60vh;       /* Elak galeri terkeluar skrin */
+  overflow-y: auto;       /* Boleh skrol kalau gambar banyak */
+  padding: 10px;
+}
+
+.photo-gallery img {
+  width: 100%;            /* Lebar mengikut bekas modal */
+  max-width: 280px;       /* Laraskan kelebaran maksimum gambar di sini */
+  height: auto;           /* Pastikan nisbah gambar tidak terpenyet */
+  border-radius: 12px;    /* Buat bucu gambar bulat sikit */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Kesan bayang comel */
+  margin: 0 auto;         /* Ratakan gambar ke tengah */
+}
