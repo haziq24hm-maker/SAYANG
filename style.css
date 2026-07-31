@@ -65,13 +65,34 @@ body {
 }
 
 .gift-card {
-  background: #fff0f3;
+  background: #ff4d6d; /* Warna utama kotak (pink pekat) */
   padding: 15px;
   border-radius: 12px;
-  border: 2px dashed #ff4d6d;
   cursor: pointer;
-  font-size: 30px;
+  position: relative;
+  /* Tambah reben melintang & menegak guna gradient */
+  background-image: 
+    linear-gradient(to right, transparent 40%, #fff 40%, #fff 60%, transparent 60%),
+    linear-gradient(to bottom, transparent 40%, #fff 40%, #fff 60%, transparent 60%);
+  border: 2px solid #ff1a4d;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: visible; /* Supaya reben penutup nampak */
 }
+
+/* Tambah penutup kotak di bahagian atas */
+.gift-card::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Letak penutup tinggi sikit */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110%; /* Lebar sikit dari kotak */
+  height: 20px;
+  background: #ff1a4d; /* Warna penutup lebih pekat */
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
 
 .modal {
   position: fixed;
