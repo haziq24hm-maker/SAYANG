@@ -21,25 +21,28 @@
     </div>
   </div>
 
-  <!-- Skrin Hadiah / Kejutan (Muncul selepas klik YES) -->
-  <div id="gift-screen" class="container hidden">
-    <h1>Abang Tahu Sayang Akan Pilih Yes 💕</h1>
-    <img src="happy.gif" alt="Happy GIF" class="gift-header-img">
-<div id="gifts-container" class="hidden">
-  <h2>Yay! Pilih Hadiah🎁</h2>
-  <p style="font-weight: bold; color: #ff4d6d; margin-top: 10px;">Sila Tekan Hadiah</p>
-  <div class="gifts-grid">
-
-  <div class="gift-card" onclick="showSection('memories')">
-    <img src="gift1.gif" alt="Gift 1" class="gift-icon">
-  </div>
-  <div class="gift-card" onclick="showSection('music')">
-    <img src="gift2.gif" alt="Gift 2" class="gift-icon">
-  </div>
-  <div class="gift-card" onclick="showSection('letter')">
-    <img src="gift3.gif" alt="Gift 3" class="gift-icon">
-  </div>
-</div>
+ <!-- Skrin Hadiah / Kejutan (Muncul selepas klik YES) -->
+    <div id="gift-screen" class="container hidden">
+      <h1>Abang Tahu Sayang Akan Pilih Yes 💕</h1>
+      <img src="happy.gif" alt="Happy GIF" class="gift-header-img">
+      
+      <div id="gifts-container">
+        <h2>Yay! Pilih Hadiah 🎁</h2>
+        <p style="font-weight: bold; color: #ff4d6d; margin-top: 10px;">Sila Tekan Hadiah</p>
+        
+        <div class="gifts-grid">
+          <div class="gift-card" onclick="showSection('memories')">
+            <img src="gift1.gif" alt="Gift 1" class="gift-icon">
+          </div>
+          <div class="gift-card" onclick="showSection('music')">
+            <img src="gift2.gif" alt="Gift 2" class="gift-icon">
+          </div>
+          <div class="gift-card" onclick="showSection('letter')">
+            <img src="gift3.gif" alt="Gift 3" class="gift-icon">
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- Kandungan Hadiah 1: Memori / Gambar -->
   <div id="memories" class="modal hidden">
